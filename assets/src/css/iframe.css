@@ -1,0 +1,12 @@
+iframe {
+	width: 35rem;
+	max-width: 100%;
+	height: 19.6875rem;
+	border: 0.1rem solid #e2bb79;
+}
+@media screen and (max-width: 560px) {
+	iframe {
+		width: 98vw;
+		height: 57vw;
+	}
+}

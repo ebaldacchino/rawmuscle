@@ -1,0 +1,33 @@
+.stripper-profile {
+	width: 70%;
+}
+.about-stripper > .image-container {
+	width: 35%;
+	margin: 0 1rem;
+	float: left;
+	object-fit: contain;
+}
+.about-stripper > .image-container > img {
+	width: 100%;
+	height: 100%;
+}
+.stripper-info > *:first-child {
+	margin-top: 0;
+}
+@media screen and (max-width: 1100px) {
+	.stripper-profile {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.about-stripper > .image-container {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.about-stripper > .image-container {
+		width: 100%;
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+	}
+}

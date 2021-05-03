@@ -1,0 +1,242 @@
+/* 
+Theme Name: Raw Muscle
+Author: Edward Baldacchino
+Author URI: https://ebaldacchino.netlify.app
+Description: The official Theme for Raw Muscle
+Version: 1.0 
+*/
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+	scroll-behavior: smooth;
+	transition: color 0.3s, filter 0.3s, background-color 0.3s, box-shadow 0.3s,
+		transform 0.5s ease-in-out, opacity 0.5s;
+}
+:root {
+	--theme-color: rgb(229, 193, 0);
+	--main-font-color: #f5f5f5;
+	--common-form-color: grey;
+	--theme-gradient: linear-gradient(to bottom right, orange, #e5c100);
+	--main-font: 'Josefin Sans', sans-serif;
+	--secondary-font: 'Open Sans', sans-serif;
+	--error-color: #e74c3c;
+	--success-color: #2ecc71;
+	--testimonial-slider-width: 40rem;
+	--testimonial-slider-max-width: 90vw;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	background-color: black;
+	font-family: var(--secondary-font);
+	margin: 0;
+	overflow: hidden;
+}
+section {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-top: 2rem;
+}
+.text-center {
+	text-align: center;
+}
+.no-margin-top,
+section.info {
+	margin-top: 0;
+}
+main > h1:first-child {
+	margin-bottom: 0.675rem;
+}
+body,
+a,
+i,
+.icon,
+.btn {
+	color: var(--main-font-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+}
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--main-font);
+}
+h1 {
+	font-size: 2.25rem;
+}
+.w100 {
+	width: 100%;
+} 
+.grid-center {
+	display: grid;
+	place-items: center;
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.glow {
+	filter: drop-shadow(0 0 0.325rem var(--theme-color));
+}
+a.active {
+	color: var(--theme-color);
+}
+.glow:hover {
+	filter: drop-shadow(0 0 0.75rem var(--theme-color));
+}
+h2 {
+	font-size: 1.75rem;
+}
+.row {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+}
+.row > article {
+	padding: 0;
+}
+.row > .blog-post {
+	display: flex;
+	flex-flow: column nowrap;
+}
+.row > .blog-post > a {
+	padding: 0 1rem;
+}
+.row > .blog-post > a > img {
+	width: 100%;
+	max-height: 40vh;
+	object-fit: contain;
+}
+.row > .blog-post > p {
+	text-align: left;
+}
+main p {
+	line-height: 1.5;
+	text-align: justify;
+	padding: 0 1rem;
+}
+.info p {
+	width: 90vw;
+	padding: 0;
+}
+@media screen and (max-width: 1200px) {
+	.row {
+		grid-template-columns: 1fr 1fr;
+	}
+	.row > article {
+		padding: 0 0 2.5rem 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.row {
+		grid-template-columns: 1fr;
+	}
+	.row > article:last-child {
+		padding-bottom: 0;
+	}
+}
+.row > article > p {
+	text-align: center;
+}
+
+.btn {
+	width: fit-content;
+	font-size: 1rem;
+	padding: 0.2rem 1.75rem 0 1.75rem;
+	font-weight: 600;
+	cursor: pointer;
+	background: var(--theme-color);
+	text-transform: uppercase;
+	border-radius: 1.75rem;
+	border: none;
+	margin: 1.25rem 0;
+	height: 3rem;
+	text-shadow: 0 -0.0275rem 0.0275rem rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0.75rem 0.5rem 2rem -0.25rem rgba(0, 0, 0, 0.8),
+		0 0.5rem 0.9375rem rgba(229, 193, 0, 0.175);
+}
+.btn:hover {
+	background-color: white;
+	color: black;
+	box-shadow: inset 0.75rem 0.5rem 2rem -0.25rem rgba(0, 0, 0, 0.8),
+		0 0.5rem 0.9375rem rgba(255, 255, 255, 0.175);
+}
+.center-btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 250px) {
+	* {
+		font-size: 5.8vw;
+	}
+}
+@media screen and (min-width: 1920px) {
+	* {
+		font-size: 0.925vw;
+	}
+}
+.hero-img {
+	height: calc(100vh - 5.25rem);
+	margin-top: 0;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+.hero-img img {
+	width: auto;
+	object-position: center;
+	object-fit: cover;
+	height: 100%;
+}
+
+footer,
+aside,
+aside > article,
+.row > article,
+.tour-listing {
+	display: grid;
+	place-items: center;
+}
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: 5.25rem 0 0 0;
+	margin-top: 5.25rem;
+	padding: 0;
+	min-height: calc(100vh - 5.25rem);
+}
+.tab {
+	display: flex;
+	justify-content: space-between;
+	width: 20rem;
+	max-width: 90vw;
+	margin: 1em 0;
+}
+
+i.icon {
+	cursor: pointer;
+}
+.image-container > img {
+	width: 100%;
+	height: 100%;
+}

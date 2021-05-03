@@ -1,0 +1,25 @@
+main.page-transition {
+	transform: none;
+	opacity: 1;
+	transition: all 0.2s ease-out;
+}
+main.page-transition:is(.arriving, .leaving) { 
+	opacity: 0;
+} 
+main.page-transition.leaving.left {
+	transform: translateX(-100vw);
+}
+main.page-transition.leaving.right {
+	transform: translateX(100vw);
+} 
+html {
+	overflow-x: hidden;
+}
+.slide-in {
+	opacity: 0;
+	transform: translateY(20vh);
+}
+.slide-in.on-screen {
+	opacity: 1;
+	transform: translateY(0);
+}
