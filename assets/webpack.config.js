@@ -4,9 +4,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
 
-module.exports = (env) => {
+module.exports = ({ mode }) => {
 	return {
-		mode: env.dev ? 'development' : 'production',
+		mode,
 		entry: './src/main.js',
 		output: {
 			filename: '[name].[contenthash].js',

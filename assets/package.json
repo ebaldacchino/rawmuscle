@@ -6,8 +6,8 @@
 	"scripts": {
 		"clean": "rm dist/*",
 		"dev": "webpack serve",
-		"start": "webpack --watch --env dev",
-		"build": "webpack --env"
+		"start": "webpack --watch --env mode=development",
+		"build": "webpack --env --env mode=production"
 	},
 	"keywords": [
 		"wordpress",
