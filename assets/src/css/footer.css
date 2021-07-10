@@ -13,7 +13,24 @@ footer :is(.form-control, nav, .social-links) {
 	margin-top: 0;
 	margin-bottom: 1.5rem;
 }
-@media screen and (max-width: 600px) {
+footer .social-links li {
+	font-size: 1.25rem;
+	margin: 0 0.375rem;
+}
+footer > .footer-container {
+	max-width: 100%;
+}
+footer nav > a {
+	text-transform: capitalize;
+}
+footer .logos-container {
+	max-width: 50rem;
+	margin: 0 auto 1rem auto;
+}
+footer .logos-container img {
+	width: 100%;
+}
+/* @media screen and (max-width: 600px) {
 	footer .form-control {
 		width: 90%;
 		max-width: 30rem;
@@ -38,24 +55,4 @@ footer :is(.form-control, nav, .social-links) {
 	footer input[type='email'] {
 		border-radius: 1.5rem 0 0 1.5rem;
 	}
-}
-footer .social-links li {
-	font-size: 1.25rem;
-	margin: 0 0.375rem;
-}
-footer > .footer-container {
-	width: 100%;
-}
-footer nav > a {
-	text-transform: capitalize;
-}
-footer .logos-container {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	max-width: 50rem;
-	margin: 0 auto 1rem auto;
-}
-footer .logos-container img {
-	width: 100%;
-}
+} */

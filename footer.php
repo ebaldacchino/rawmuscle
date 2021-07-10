@@ -25,7 +25,7 @@
         $page_heading=false;
         include 'components/title.php' 
       ?>
-      <div class="logos-container">
+      <div class="logos-container flex-center">
           <a href="https://www.myunikorn.com.au" target="_blank" rel="noreferrer">
             <img src="/wp-content/themes/rawmuscle/assets/img/myunikorn.svg" alt="My Unikorn Logo">
           </a>
