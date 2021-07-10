@@ -3,7 +3,13 @@
     $meta_description = "Keep your eyes peeled to hear all about Australia's Best Male Strippers' adventures, from their domination of the X-Awards to their trek to Uluru. This is your chance to get to know all about the men of Raw Muscle!";
     get_header(); 
 ?> 
-<h1 class="glow">Blog Posts</h1>
+<?php  
+        global $title; 
+        global $page_heading;
+        $title='blog posts';
+        $page_heading=true;
+        include 'components/title.php';  
+?> 
 <section class='row no-margin-top'>
     <?php
         $args = array(

@@ -1,5 +1,9 @@
 <section class="slider-section slide-in" id='tour-dates'>
-    <h2 class="glow">tour dates</h2>
+    <?php  
+        global $title; 
+        $title='tour dates';
+        include 'title.php'  
+	?>
     
     <?php
         $args = array(

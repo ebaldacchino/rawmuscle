@@ -1,4 +1,4 @@
-<ul class="social-links">
+<ul class="social-links flex-center">
     <li>
         <a href="https://www.facebook.com/rawmuscle" target="_blank" rel="noreferrer">
             <i class="fab fa-facebook-f icon" aria-label="Facebook">

@@ -11,15 +11,25 @@
     ?>
 </section>
 <section class="slide-in">
-    <h2 class="glow">sneak peak</h2>
+	<?php  
+        global $title; 
+        $title='sneak peak';
+        include 'components/title.php'  
+	?>   
     <iframe
 			width="560"
 			height="315"
             loading='lazy'
-			src="https://www.youtube.com/embed/q-im8TsEQPw"
+			src="https://www.youtube.com/embed/M0psxBbptuQ"
 			srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{display:grid;place-items:center;height:100%;font-size:3rem;color:white;text-shadow:0 0 0.5em black}</style>
-			<a href=https://www.youtube.com/embed/q-im8TsEQPw?autoplay=1>
-				<img src=https://img.youtube.com/vi/q-im8TsEQPw/hqdefault.jpg alt='Have you had the Raw Muscle experience yet?'>
+			<a href=https://www.youtube.com/embed/M0psxBbptuQ?autoplay=1>
+				<picture> 
+					<source media='(max-width: 480px)' srcset='https://i.ytimg.com/vi_webp/M0psxBbptuQ/hqdefault.webp' loading='lazy' type='image/webp'>
+  					<source media='(max-width: 480px)' srcset='https://i.ytimg.com/vi/M0psxBbptuQ/hqdefault.jpg' loading='lazy' type='image/jpeg'>	 
+					<source srcset='https://i.ytimg.com/vi_webp/M0psxBbptuQ/sddefault.webp' loading='lazy' type='image/webp'>
+  					<source srcset='https://i.ytimg.com/vi/M0psxBbptuQ/sddefault.jpg' loading='lazy' type='image/jpeg'>	 
+					<img src='https://img.youtube.com/vi/M0psxBbptuQ/sddefault.jpg' alt='Have you had the Raw Muscle experience yet?'>
+				</picture> 
 				<span>&#x25BA;</span>
 			</a>"
 			frameborder="0"

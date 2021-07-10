@@ -149,4 +149,4 @@ el('form').addEventListener('submit', (e) => {
 const toggleSubmittedForm = () =>
 	el('.form-submitted-bg').classList.toggle('show');
 
-el('.submit-btn').addEventListener('click', toggleSubmittedForm);
+el('.submit-btn')?.addEventListener('click', toggleSubmittedForm);

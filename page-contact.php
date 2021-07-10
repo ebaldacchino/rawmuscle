@@ -3,7 +3,13 @@
     $meta_description = "Whether you want tickets to our award-winning male strip show, a male stripper or topless waiter to come to you, or you have ask a couple cheeky questions, get in touch!";
     get_header(); 
 ?> 
-<h1 class="glow">get in touch</h1> 
+<?php  
+        global $title; 
+        global $page_heading;
+        $title='get in touch';
+        $page_heading=true;
+        include 'components/title.php'  
+?>  
 <section class="no-margin-top">
     <p class="text-center">You're more than welcome to ask 'anything'!</p>
     <form class="form" method="POST" novalidate>

@@ -3,7 +3,13 @@
     $meta_description = "You don't have to come to the show to meet the men of Australia's award winning show. Whether you need a male stripper, topless waiter, or a nude model for some cheeky art, we have the canvas for you!";
     get_header(); 
 ?> 
-<h1 class="glow">home visits</h1> 
+<?php  
+        global $title; 
+        global $page_heading;
+        $title='home visits';
+        $page_heading=true;
+        include 'components/title.php'  
+?> 
 <section class="info">
     <p>First of all, do you like an adventurous bad boy, or a sweet and sensitive charmer? Seeing as you’re only planning on one hens night, you can always get both. But why?</p>
     <p>Firstly, a bachelorette needs someone to serve her drinks and pamper her. Secondly, she needs a rock hard canvas for her body shots. Thirdly, she needs someone to fulfill her hens night fantasies. In conclusion, our sexy male strippers and topless waiters will be sure to make your ladies night nothing short of amazing.</p>

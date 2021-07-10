@@ -3,7 +3,13 @@
     $meta_description = wp_strip_all_tags ( get_the_content(), true );
     get_header(); 
 ?> 
-<h1 class="glow"><?php the_title(); ?></h1>
+<?php  
+        global $title; 
+        global $page_heading;
+        $title=get_the_title();
+        $page_heading=true;
+        include 'components/title.php'  
+?>  
 <section class="stripper-profile no-margin-top"> 
     <article class="about-stripper"> 
         <?php if(has_post_thumbnail()) { ?>

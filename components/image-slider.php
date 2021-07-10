@@ -1,11 +1,16 @@
-<?php if ($_SERVER["REQUEST_URI"] === '/strippers/') { ?>
-<h1 class="glow">the guys</h1> 
-<section class="slider-section slide-in no-margin-top" id='male-strippers'> 
-<?php } else { ?>
-<section class="slider-section slide-in" id='male-strippers'> 
-    <h2 class="glow">the guys</h2>
+<?php 
+
+global $page_heading;
+$page_heading = $_SERVER["REQUEST_URI"] === '/strippers/'; 
+?>
+
+<section class="slider-section slide-in <?php echo $page_heading ? 'no-margin-top' : ''; ?>" id='male-strippers'>  
     
-<?php } ?>  
+<?php  
+        global $title; 
+        $title='the guys';
+        include 'title.php'  
+?>  
  <p>Got a Raw Muscle guy you fantasize about? Click on him below for just a little bit 'more'!</p>
     <article class="slider-container flex-center no-margin-top">
         <button class="arrow-container left flex-center" aria-label="Move slider left">

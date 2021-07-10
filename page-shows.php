@@ -3,7 +3,13 @@
     $meta_description = "Whether you're in Shepparton or Auckland, Australia's award winning male strippers will bring their award winning show to you!";
     get_header(); 
 ?> 
-<h1 class="glow">about the show</h1> 
+<?php  
+        global $title; 
+        global $page_heading;
+        $title='about the show';
+        $page_heading=true;
+        include 'components/title.php'  
+?> 
 <section class="info">
     <p>The perfect girls night out. Winners of the X-Awards 2019 Male Strip Show Of The Year. In other words, we pull all the stops to make your night amazing. It doesn’t matter whether you’re celebrating a hens night, birthday party, divorce party or simply a ladies night. Our team of male strippers are coming for you.</p>
     <p>The men of Raw Muscle tour Australia and New Zealand wide. Consequently, our hot hunks are travelling everywhere from Perth to Christchurch. You can run, but you can’t hide!</p>

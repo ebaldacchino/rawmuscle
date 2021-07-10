@@ -41,7 +41,7 @@
   </button>
 </nav>    
 <aside>
-    <article> 
+    <article class="flex-center"> 
       <?php include('components/nav-links.php'); ?>
       <?php include('components/social-links.php'); ?>
     </article>

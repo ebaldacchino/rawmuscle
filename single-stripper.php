@@ -47,9 +47,13 @@
                     
         </section>
     <?php } else {
-        ?> 
-        <h1 class="glow"><?php the_title(); ?></h1> 
-    <?php
+        
+        global $title; 
+        global $page_heading;
+        $title=get_the_title();
+        $page_heading=true;
+        include 'components/title.php'; 
+        
     } ?>
 
 <section class="stripper-profile <?php if (!$second_image) {
@@ -66,7 +70,15 @@
         <div class='stripper-info'><?php the_content(); ?></div>
     </article>
 </section>
-<section class="slide-in on-screen"><h2 class="glow">check my availability</h2><p class="text-center">Everything we need to book <?php the_title(); ?>
+<section class="slide-in on-screen">
+<?php  
+        global $title; 
+        global $page_heading;
+        $title='check my availability';
+        $page_heading=false;
+        include 'components/title.php';  
+?> 
+<p class="text-center">Everything we need to book <?php the_title(); ?>
 </p>
 <form class="form" method="POST" novalidate>
     <input id='name' type="name" placeholder="Name" name="name">
