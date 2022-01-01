@@ -6,9 +6,9 @@
 <?php  
         global $title; 
         global $page_heading;
-        $title='get in touch';
-        $page_heading=true;
-        include 'components/title.php'  
+        $title = 'get in touch';
+        $page_heading = true;
+        include 'components/title.php';  
 ?>  
 <section class="no-margin-top">
     <p class="text-center">You're more than welcome to ask 'anything'!</p>
@@ -19,7 +19,7 @@
         <textarea name="message" id='message'  placeholder="Please type your message here..." rows="5"></textarea>
         <!-- <label for="subscribe">
             <input type="checkbox" name="subscribe" value="false"> I would like to subscribe to your mailing list</label> -->
-        <button class="btn">send</button>
+        <button class="btn" type='submit'>send</button>
     </form>
 </section>
 <?php include('components/submitted-form.php'); ?>

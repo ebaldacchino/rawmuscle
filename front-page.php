@@ -11,11 +11,13 @@
     ?>
 </section>
 <section class="slide-in">
-	<?php  
+    <?php  
         global $title; 
+		global $page_heading;
+		$page_heading = false;
         $title='sneak peak';
-        include 'components/title.php'  
-	?>   
+        include 'components/title.php';  
+	?>  
     <iframe
 			width="560"
 			height="315"

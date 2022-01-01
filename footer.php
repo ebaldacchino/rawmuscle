@@ -1,13 +1,13 @@
-  </main>
+</main>
   <footer>
     <div class="footer-container slide-in"> 
       <!-- 
       <?php 
         global $page_heading;
         global $title; 
-        $title='subscribe now';
-        $page_heading=false;
-        include 'components/title.php' 
+        $title = 'subscribe now';
+        $page_heading = false;
+        include 'components/title.php'; 
       ?>
       <p class="text-center">
         To hear about the next show near you!

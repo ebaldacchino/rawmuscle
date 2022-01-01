@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	width: 20rem;
 	max-width: 90vw;
-	margin: 1em 0;
+	margin: 0 0 1em 0;
 }
 .tab button {
 	background-color: black;
@@ -15,10 +15,16 @@
 	padding: 1rem 0;
 	flex: 1;
 	transition: 0.3s;
-} 
+}
 .tab button.active {
 	border-bottom: 0.125rem solid var(--common-form-color);
-} 
+}
 .tab button:hover {
 	background-color: #ddd;
-} 
+}
+@media screen and (min-width: 601px) {
+	.tour-listing {
+		grid-template-columns: 1fr 2fr 2fr;
+		min-width: 32rem;
+	}
+}

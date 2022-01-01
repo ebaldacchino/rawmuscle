@@ -4,11 +4,11 @@
     get_header(); 
 ?> 
 <?php  
-        global $title; 
-        global $page_heading;
-        $title='home visits';
-        $page_heading=true;
-        include 'components/title.php'  
+    global $title; 
+    global $page_heading;
+    $title = 'home visits';
+    $page_heading = true;
+    include 'components/title.php';  
 ?> 
 <section class="info">
     <p>First of all, do you like an adventurous bad boy, or a sweet and sensitive charmer? Seeing as you’re only planning on one hens night, you can always get both. But why?</p>

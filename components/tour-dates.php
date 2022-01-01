@@ -1,8 +1,12 @@
-<section class="slider-section slide-in" id='tour-dates'>
+<?php 
+    // global $page_heading;
+    $page_heading = $_SERVER["REQUEST_URI"] === '/shows/';
+?> 
+<section class="slider-section slide-in <?php echo $page_heading ? 'no-margin-top' : ''; ?>" id='tour-dates'>
     <?php  
         global $title; 
-        $title='tour dates';
-        include 'title.php'  
+        $title = 'tour dates';
+        include 'title.php';  
 	?>
     
     <?php
@@ -24,8 +28,6 @@
 
         if ($events->have_posts()) { 
           ?>
-
-        
 
         <?php 
         $states = []; 

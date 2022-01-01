@@ -18,13 +18,13 @@ export const toggleNav = () => {
 };
 
 export const toLinkLocation = (e) => {
-	const link = e.target.getAttribute('href');
-	if (link && el(link)) {
+	const link = e.target.getAttribute('href'); 
+	if (link && el(link)) { 
 		window.scroll({
 			top: el(link).offsetTop - el('.navbar').getBoundingClientRect().height,
 			behavior: 'smooth',
 		});
-	}
+	} 
 };
 
 export const pageTransitions = () => {
@@ -61,7 +61,7 @@ export const pageTransitions = () => {
 
 	setTimeout(() => {
 		transitionEl.classList.remove('arriving');
-	}, 200);
+	}, 300);
 };
 
 export function debounce(func, wait, immediate) {

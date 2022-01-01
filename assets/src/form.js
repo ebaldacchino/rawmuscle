@@ -1,6 +1,10 @@
+// import 'regenerator-runtime';
+
 let isSubmitting = false;
 
 const el = (x) => document.querySelector(x);
+
+const formBtn = el('form button[type="submit"]');
 
 const setErrorFor = (input, message, errors) => {
 	input.className = 'error';
@@ -120,6 +124,8 @@ const sendForm = async (values, fields) => {
 el('form').addEventListener('submit', (e) => {
 	e.preventDefault();
 
+	formBtn.textContent = 'Sending...';
+
 	const values = formValues();
 
 	let errors = validate(values);
@@ -139,14 +145,14 @@ el('form').addEventListener('submit', (e) => {
 			field.addEventListener('change', () => validate(formValues()))
 		);
 	}
-	if (Object.keys(errors).length > 0) {
-		return false;
-	} else {
+	if (Object.keys(errors).length === 0) {
 		sendForm(values, formFields);
 	}
+
+	formBtn.textContent = 'Send';
 });
 
 const toggleSubmittedForm = () =>
 	el('.form-submitted-bg').classList.toggle('show');
 
-el('.submit-btn')?.addEventListener('click', toggleSubmittedForm);
+el('.submit-btn').addEventListener('click', toggleSubmittedForm);

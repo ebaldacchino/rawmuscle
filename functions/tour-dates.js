@@ -1,6 +1,6 @@
 import { checkSlide } from './functions';
 
-const el = (x) => document.querySelector(x);
+// const el = (x) => document.querySelector(x);
 const all = (x) => Array.from(document.querySelectorAll(x));
 
 all('.tab > button').map((button) => {

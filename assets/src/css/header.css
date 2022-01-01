@@ -60,8 +60,11 @@ nav a {
 		display: none;
 	}
 }
-aside { 
-	position: fixed; 
+aside {
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	top: 5.125rem;
 	bottom: 0;
@@ -76,7 +79,10 @@ aside {
 		background-color: rgba(0, 0, 0, 0.7);
 	}
 }
-aside > article { 
+aside > article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-flow: column nowrap;
 	width: 16rem;
 	max-width: 95%;
@@ -92,8 +98,11 @@ aside > article {
 aside.open > article {
 	transform: translate(0, 0) scaleY(1) scaleX(1);
 }
-aside > article > .page-links { 
-	flex-flow: column nowrap; 
+aside > article > .page-links {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	text-align: center;
 }
 aside a,
 aside .icon {

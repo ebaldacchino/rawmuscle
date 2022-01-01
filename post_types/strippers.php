@@ -22,6 +22,4 @@
 
     add_action('init', 'strippers_post_type');
 
-include 'add-featured-image.php'
-
 ?>

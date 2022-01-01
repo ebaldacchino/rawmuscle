@@ -1,16 +1,13 @@
 <?php 
-
-global $page_heading;
-$page_heading = $_SERVER["REQUEST_URI"] === '/strippers/'; 
+    global $page_heading;
+    $page_heading = $_SERVER["REQUEST_URI"] === '/strippers/';
 ?>
-
-<section class="slider-section slide-in <?php echo $page_heading ? 'no-margin-top' : ''; ?>" id='male-strippers'>  
-    
-<?php  
+<section class="slider-section slide-in <?php echo $page_heading ? 'no-margin-top' : ''; ?>" id='male-strippers'>    
+<?php
         global $title; 
-        $title='the guys';
-        include 'title.php'  
-?>  
+        $title = 'the guys';
+        include 'title.php';     
+?>
  <p>Got a Raw Muscle guy you fantasize about? Click on him below for just a little bit 'more'!</p>
     <article class="slider-container flex-center no-margin-top">
         <button class="arrow-container left flex-center" aria-label="Move slider left">
@@ -34,8 +31,7 @@ $page_heading = $_SERVER["REQUEST_URI"] === '/strippers/';
 
                     <?php the_post_thumbnail(); ?>
                     <div class="description-container">
-                        <span><?php echo the_title(); ?></span>
-                        <!-- <span class="contrast">star sign</span> -->
+                        <span><?php echo the_title(); ?></span> 
                     </div>
                 </a>
                 <?php } ?>

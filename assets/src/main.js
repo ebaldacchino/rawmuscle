@@ -5,7 +5,7 @@ import {
 	checkSlide,
 	toggleNav,
 	toLinkLocation,
-	pageTransitions 
+	pageTransitions,
 } from './functions';
 
 import './css/style.css';

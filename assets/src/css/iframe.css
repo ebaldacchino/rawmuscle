@@ -1,12 +1,11 @@
 iframe {
-	width: 70vw;
+	width: 35rem;
 	max-width: 100%;
-	height: calc(70vw * 9 / 16);
-	margin-top: 0.25rem;
+	height: 19.6875rem;
 }
 @media screen and (max-width: 560px) {
 	iframe {
 		width: 98vw;
-		height: calc(98vw * 9 / 16);
+		height: 57vw;
 	}
 }
